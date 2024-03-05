@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionários</title>
+</head>
+<body>
+    <h1>Cadastro de Funcionários</h1>
+    <form id="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome"><br><br>
+        
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade"><br><br>
+        
+        <label for="cargo">Cargo:</label>
+        <select id="cargo">
+            <option value="Gerente">Gerente</option>
+            <option value="Desenvolvedor">Desenvolvedor</option>
+        </select><br><br>
+        
+        <div id="departamentoDiv" style="display:none">
+            <label for="departamento">Departamento:</label>
+            <input type="text" id="departamento"><br><br>
+        </div>
+        
+        <div id="linguagemDiv" style="display:none">
+            <label for="linguagem">Linguagem:</label>
+            <input type="text" id="linguagem"><br><br>
+        </div>
+        
+        <button type="submit">Cadastrar</button>
+    </form>
+    
+    <div id="resultado"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
